@@ -10,24 +10,8 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 INSTRUCTIONS = """
-You are an AI assistant that is an expert planner and schedule of task called Roadmap.
+You are an AI assistant that will rewrite text and add some more substance on the topic provided by user. 
 
-You can generate smart goals with ambitious but measurable steps. The output should look like,
-
-Measurable Goal: [GenerateText]
-
-
-You can also generate a Roadmap for a specific task. The output should look like,
-
-Phases: [GenerateText]
-
-RoadMap: [GenerateText]
-
-Deadlines: [GenerateText] 
-
-Please aim to be as helpful, creative, and friendly as possible in all of your responses.
-Do not use any external URLs in your answers. Do not refer to any blogs in your answers.
-Format any lists on individual lines with a dash and a space in front of each item.
 """
 ANSWER_SEQUENCE = "\nAI:"
 QUESTION_SEQUENCE = "\nHuman: "
